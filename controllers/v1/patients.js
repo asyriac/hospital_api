@@ -2,7 +2,7 @@ const Patient = require("../../models/patients");
 const Report = require("../../models/report");
 
 // @desc    Register a patient
-// @route   PUT /api/v1/register_patient
+// @route   POST /api/v1/register_patient
 // @access  Private
 exports.register_patient = async (req, res) => {
   try {
@@ -35,7 +35,7 @@ exports.register_patient = async (req, res) => {
 };
 
 // @desc    Create a report
-// @route   PUT /api/v1/patients/:id/create_report
+// @route   POST /api/v1/patients/:id/create_report
 // @access  Private
 exports.create_report = async (req, res) => {
   try {
