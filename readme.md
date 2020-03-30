@@ -23,6 +23,7 @@ To get the Node server running locally:
 ## API to register a doctor
 
 URL [POST]: /api/v1/doctors/register
+
 ACCESS : Public
 
 ```
@@ -50,6 +51,7 @@ ACCESS : Public
 ## API to login a doctor
 
 URL [POST]: /api/v1/doctors/login
+
 ACCESS : Public
 
 ```
@@ -76,6 +78,7 @@ ACCESS : Public
 ## API to register a patient
 
 URL [POST]: /api/v1/register_patient
+
 ACCESS : Private
 
 ```
@@ -101,6 +104,7 @@ ACCESS : Private
 ## API to create a report
 
 URL [POST]: /api/v1/patients/:id/create_report
+
 ACCESS : Private
 
 ```
@@ -125,6 +129,7 @@ ACCESS : Private
 ## API to fetch all reports of a patient
 
 URL [GET]: /api/v1/patients/:id/all_reports
+
 ACCESS : Public
 
 ```
@@ -163,6 +168,7 @@ ACCESS : Public
 ## API to fetch all reports based on status
 
 URL [GET]: /api/v1/reports/:status
+
 ACCESS : Public
 
 ```
