@@ -78,7 +78,7 @@ URL [POST]: /api/v1/register_patient
 ```
 //request
 {
-  "name": "Doe,
+  "name": "Doe",
   "phone": "123456789"
 }
 
