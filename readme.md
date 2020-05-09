@@ -17,6 +17,7 @@ To get the Node server running locally:
 - models/ - This folder contains the schema definitions for our Mongoose models.
 - controllers/ - This folder contains the actions to be performed on the routes.
 - middleware/ - This folder contains middlewares.
+- test/ - This folder contains the unit tests for the api routes.
 
 # API
 
