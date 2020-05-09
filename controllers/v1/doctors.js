@@ -13,12 +13,12 @@ exports.register = async (req, res) => {
     res.status(201).json({
       success: true,
       body: user,
-      token
+      token,
     });
   } catch (err) {
     // Error handling
     res.status(400).json({
-      success: false
+      success: false,
     });
   }
 };
@@ -50,15 +50,15 @@ exports.login = async (req, res) => {
     const token = user.getSignedJwtToken();
 
     // Return response
-    res.status(200).json({
+    res.status(201).json({
       success: true,
       body: user,
-      token
+      token,
     });
   } catch (err) {
     // Error handling
     res.status(400).json({
-      success: false
+      success: false,
     });
   }
 };

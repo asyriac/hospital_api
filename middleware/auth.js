@@ -9,21 +9,20 @@ exports.checkAuth = async (req, res, next) => {
   }
 
   if (!token) {
-    return res.status(401).json({
+    return res.status(500).json({
       success: false,
-      message: "Unauthroized access"
+      message: "Unauthroized access",
     });
   }
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    console.log(decoded);
     req.user = await Doctor.findById(decoded.id);
     next();
   } catch (err) {
-    return res.status(401).json({
+    return res.status(500).json({
       success: false,
-      message: "Unauthroized access"
+      message: "Unauthroized access",
     });
   }
 };

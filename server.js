@@ -17,8 +17,10 @@ app.use(express.json());
 app.use("/", require("./routes/index"));
 
 // Starting the server
-app.listen(PORT, err => {
+app.listen(PORT, (err) => {
   if (err) {
     console.log("Error starting server");
   } else console.log(`Server started on port ${PORT}`);
 });
+
+module.exports = app;
